@@ -83,3 +83,42 @@ Console.WriteLine();
 Console.WriteLine("check || (1: true)");
 bool resultOr = CheckAndPrint("C", true) || CheckAndPrint("D", false);
 Console.WriteLine($"result: {resultOr}");
+
+Console.WriteLine();
+Console.WriteLine("prioritet");
+
+int resultNoParens = 2 + 3 * 4;
+int resultWithParens = (2 + 3) * 4;
+Console.WriteLine($"2 + 3 * 4 = {resultNoParens}");
+Console.WriteLine($"(2 + 3) * 4 = {resultWithParens}");
+bool logicResult = 5 > 3 && 2 < 4 || false;
+bool logicResultParens = (5 > 3 && 2 < 4) || false;
+Console.WriteLine($"no parens: {logicResult}");
+Console.WriteLine($"parens: {logicResultParens}");
+
+Console.WriteLine();
+Console.WriteLine("Priemnaya kommissia");
+
+Console.Write("Enter sredniy ball attestata: ");
+double averageGrade = double.Parse(Console.ReadLine());
+
+Console.Write("Enter balli za ekzamen (0-100): ");
+int examScore = int.Parse(Console.ReadLine());
+
+Console.Write("Есть льгота? (1 - yes, 0 - no): ");
+int benefitInput = int.Parse(Console.ReadLine());
+
+bool hasBenefit = (benefitInput == 1);
+bool hasGoodCert = averageGrade >= 4.0;
+bool hasGoodExam = examScore >= 60;
+bool isEligibleByRules = (hasGoodCert && hasGoodExam) || hasBenefit;
+double totalScore = averageGrade * 10;
+totalScore += examScore;
+
+Console.WriteLine();
+Console.WriteLine("result:");
+Console.WriteLine($"good attest (>= 4.0): {hasGoodCert}");
+Console.WriteLine($"good exam (>= 60): {hasGoodExam}");
+Console.WriteLine($"lgota: {hasBenefit}");
+Console.WriteLine($"проходит по правилам: {isEligibleByRules}");
+Console.WriteLine($"itogovii ball: {totalScore}");

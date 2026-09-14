@@ -129,3 +129,18 @@ int chetnoe = int.Parse(Console.ReadLine());
 bool isEven = chetnoe % 2 == 0;
 
 Console.WriteLine($"chetnoe: {isEven}");
+
+Console.WriteLine();
+int da = 5;
+int net = 7;
+int commit = 999;
+
+Console.WriteLine($"da++ {da++}"); // сначала возвращает изначальное. потом добавляет
+Console.WriteLine($"after {da}");
+
+Console.WriteLine($"++net {++net}"); // сначала добавляет, потом return
+Console.WriteLine($"after {net}");
+
+Console.WriteLine($"new commit №{++commit}");
+Console.WriteLine($"new commit №{++commit}");
+Console.WriteLine($"commits cnt: {commit}");

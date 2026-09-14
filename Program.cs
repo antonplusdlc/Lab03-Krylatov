@@ -14,3 +14,22 @@ Console.WriteLine($"+ 5%: {balance}");
 
 balance /= 2; // партнер украл половину
 Console.WriteLine($"после кражи: {balance}");
+
+Console.WriteLine();
+Console.WriteLine("постфикс vs префикс");
+
+int lessonNumber = 1;
+Console.WriteLine($"lessonNumber++: {lessonNumber++}");
+Console.WriteLine($"after: {lessonNumber}");
+
+int weekNumber = 1;
+Console.WriteLine($"++weekNumber: {++weekNumber}");
+Console.WriteLine($"after: {weekNumber}");
+
+Console.WriteLine();
+Console.WriteLine("lovushka");
+
+int attempts = 0;
+Console.WriteLine($"attempt №{++attempts}");
+Console.WriteLine($"attempt №{++attempts}");
+Console.WriteLine($"Attempts: {attempts}");

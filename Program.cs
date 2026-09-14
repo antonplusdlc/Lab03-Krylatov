@@ -122,3 +122,10 @@ Console.WriteLine($"good exam (>= 60): {hasGoodExam}");
 Console.WriteLine($"lgota: {hasBenefit}");
 Console.WriteLine($"проходит по правилам: {isEligibleByRules}");
 Console.WriteLine($"itogovii ball: {totalScore}");
+
+Console.WriteLine();
+Console.Write("четное дай пж: ");
+int chetnoe = int.Parse(Console.ReadLine());
+bool isEven = chetnoe % 2 == 0;
+
+Console.WriteLine($"chetnoe: {isEven}");

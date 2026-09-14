@@ -144,3 +144,17 @@ Console.WriteLine($"after {net}");
 Console.WriteLine($"new commit №{++commit}");
 Console.WriteLine($"new commit №{++commit}");
 Console.WriteLine($"commits cnt: {commit}");
+
+Console.WriteLine();
+Console.Write("Summa?: ");
+double summa = double.Parse(Console.ReadLine());
+
+Console.Write("karta magnita? (0 - no, 1 - yes): ");
+int karta = int.Parse(Console.ReadLine());
+
+Console.Write("count tovarov: ");
+int counttovarov = int.Parse(Console.ReadLine());
+
+bool eligibleForDiscount = (summa >= 3000 && counttovarov >= 3) || (karta == 1);
+
+Console.WriteLine($"itog: {eligibleForDiscount}\nsumma: {summa}\nkarta: {karta}\ncount: {counttovarov}\n(summa >= 3000 && counttovarov >= 3): {(summa >= 3000 && counttovarov >= 3)}\n(karta == 1): {(karta == 1)}");
